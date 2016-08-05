@@ -12,7 +12,7 @@ This is a proof-of-concept version. It's hardcoded for a specific port, may stom
 
 ## Usage
 
-1. Install the chrome extension. It's not in the extension store yet so you'll need to clone the repo and load it as an unpacked extension.
+1. Install https://chrome.google.com/webstore/detail/ajax-debug-toolbar/ofdlgimnfjfacgcjkafmmjigpgjnjjpn.
 1. Set up your site or webapp to include an `X-Debug-Data` header in responses with a stringified json object like:
 
 ```
@@ -34,6 +34,11 @@ This is a proof-of-concept version. It's hardcoded for a specific port, may stom
     ]
 }
 ```
+
+
+## Hacking
+
+Disable the extension installed from the chrome store, clone the repo, and load it as an unpacked extension. You may want to install https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc to inspect the background script.
 
 
 ## Thanks
