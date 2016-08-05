@@ -1,0 +1,49 @@
+{
+  "name": "Ajax Debug Panel",
+  "version": "0.1",
+  "manifest_version": 2,
+  "homepage_url": "https://todo.com/TODO",
+
+  "description": "TODO",
+
+  "icons": {
+    "128": "extension-icon.png"
+  },
+
+  "background": {
+    "persistent": true,
+    "scripts": ["bg.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:8090/*"],
+      "css": ["toolbar.css"],
+      "js": ["jquery-1.8.1.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "overlay.html",
+    "toolbar.css",
+    "img/back.png",
+    "img/back_hover.png",
+    "img/bg.gif",
+    "img/close.png",
+    "img/close_hover.png",
+    "img/console.png",
+    "img/desc.gif",
+    "img/djdt_vertical.png",
+    "img/headerbg.png",
+    "img/indicator.png",
+    "img/less.png",
+    "img/more.png",
+    "img/panel_bg.png",
+    "img/source.png",
+    "img/tick-red.png",
+    "img/tick.png"
+  ],
+
+  "permissions": [
+    "webRequest",
+    "*://localhost/"
+  ]
+}
