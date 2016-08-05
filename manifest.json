@@ -1,10 +1,10 @@
 {
-  "name": "Ajax Debug Panel",
+  "name": "Ajax Debug Toolbar",
   "version": "0.1",
   "manifest_version": 2,
-  "homepage_url": "https://todo.com/TODO",
+  "homepage_url": "https://github.com/dbenamy/ajax-debug-toolbar",
 
-  "description": "TODO",
+  "description": "A chrome extension to enable a debug toolbar that makes sense for sites with lots of ajax calls.",
 
   "icons": {
     "128": "extension-icon.png"
