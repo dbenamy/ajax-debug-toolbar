@@ -5,9 +5,9 @@ Ajax debug toolbar is a chrome extension to enable a debug toolbar that makes se
 It's based on the tradition of https://github.com/jazzband/django-debug-toolbar, but the main toolbar rolls up key performance metrics from all requests into top-level summaries and allows you to drill into the details of any request since the page loaded.
 
 
-## Not ready for general use
+## Alpha software
 
-This is a proof-of-concept version. It's hardcoded for a specific port, may stomp on your page, and has some known bugs and missing features.
+This is an alpha version. It'll only work for dev sites on a specific port, and has some known bugs and missing features.
 
 
 ## Usage
