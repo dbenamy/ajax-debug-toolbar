@@ -63,17 +63,17 @@
                 '  <div class="pDebugPanelContent">' +
                 '    <div class="scroll">'
             )
+            htmls.panelContainer += '<table>'
             panel.reqs.forEach(function(req) {
                 htmls.panelContainer += (
-                    '<p>' +
-                        '<a href="#" class="details" data-href="' + req.detailsUrl + '">' +
-                            req.url + ': ' +
-                            req.kpi1.val + ' ' + req.kpi1.unit +
-                            ' (' + req.kpi2.val + ' ' + req.kpi2.unit + ')' +
-                        '</a>' +
-                    '</p>'
+                    '<tr>' +
+                        '<td class="shrink"><a href="#" class="details" data-href="' + req.detailsUrl + '">' + req.url + '</a></td>' +
+                        '<td class="shrink">' + req.kpi1.val + ' ' + req.kpi1.unit + '</td>' +
+                        '<td class="expand">' + req.kpi2.val + ' ' + req.kpi2.unit + '</td>' +
+                    '</tr>'
                 )
             });
+            htmls.panelContainer += '</table>'
             htmls.panelContainer += (
                 '      <iframe class="' + panel.name + '" height="500px" width="100%"></iframe>' +
                 '    </div>' +

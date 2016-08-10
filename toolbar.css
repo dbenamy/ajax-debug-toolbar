@@ -419,3 +419,10 @@
 #pDebug table.pDebugSortable .headerSortDown {
     background-image: url(chrome-extension://__MSG_@@extension_id__/img/desc.gif);
 }
+
+#pDebug table td.shrink {
+    white-space:nowrap
+}
+#pDebug table td.expand {
+    width: 99%
+}
