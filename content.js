@@ -312,7 +312,7 @@
 
     function injectToolbar() {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", chrome.extension.getURL("overlay.html"), true);
+        xhr.open("GET", chrome.extension.getURL("toolbar.html"), true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
                 $('body').append(xhr.responseText);

@@ -22,7 +22,7 @@
     }
   ],
   "web_accessible_resources": [
-    "overlay.html",
+    "toolbar.html",
     "toolbar.css",
     "img/back.png",
     "img/back_hover.png",
